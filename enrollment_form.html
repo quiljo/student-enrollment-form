@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(133, 133, 216, 0.514);
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        h3 {
+            color: #555;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: 20px auto;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Enrollment Form</h1>
+
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Fill in the form fields.</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+
+    <form action="#" method="POST">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required min="18" max="100">
+
+        <label>Sex:</label>
+        <input type="radio" id="male" name="sex" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female">
+        <label for="female">Female</label>
+
+        <label for="course">Course Options:</label>
+        <select id="course" name="course" required>
+            <option value="BSIT">BS Information Technology (BSIT)</option>
+            <option value="BSSW">BS Social Work (BSSW)</option>
+            <option value="BSPA">BS Public Administration (BSPA)</option>
+            <option value="BSCS">BS Computer Science (BSCS)</option>
+        </select>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="web-development" name="interests" value="Web Development">
+        <label for="web-development">Web Development</label>
+        <input type="checkbox" id="data-science" name="interests" value="Data Science">
+        <label for="data-science">Data Science</label>
+        <input type="checkbox" id="networking" name="interests" value="Networking">
+        <label for="networking">Networking</label>
+        <input type="checkbox" id="graphic-design" name="interests" value="Graphic Design">
+        <label for="graphic-design">Graphic Design</label>
+
+        <button type="submit">Enroll Now</button>
+    </form>
+
+    <h3>Enrolled Students</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Joanne Juanane</td>
+                <td>jojo@email.com</td>
+                <td>19</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development, Data Science</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sharlene Habito</td>
+                <td>shaoshao@email.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSSW</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jeanna Nicole</td>
+                <td>Nicole12@email.com</td>
+                <td>21</td>
+                <td>Female</td>
+                <td>BSPA</td>
+                <td>Networking</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Angelica Castillo</td>
+                <td>Catttb@email.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSCS</td>
+                <td>Data Science, Networking</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ali Andaya</td>
+                <td>misskonasha@email.com</td>
+                <td>23</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development, Graphic Design</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
